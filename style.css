@@ -681,6 +681,63 @@ footer p {
     }
 }
 
+/* Sponsors Section */
+#sponsors {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.sponsors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.sponsor img {
+    max-width: 300px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.sponsor img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Responsive design for sponsors */
+@media screen and (max-width: 768px) {
+    .sponsor img {
+        max-width: 250px;
+        max-height: 120px;
+    }
+    
+    #sponsors {
+        padding: 40px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sponsor img {
+        max-width: 200px;
+        max-height: 100px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .organizers {
         grid-template-columns: repeat(4, 1fr);
