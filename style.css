@@ -738,6 +738,88 @@ footer p {
     }
 }
 
+/* Keynote styling */
+.keynote-container {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.keynote-container h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.keynote-container h3::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--accent);
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.keynote-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: none;
+}
+
+.keynote-card:hover {
+    transform: translateY(-3px);
+}
+
+.keynote-card .card-header {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    padding: 25px;
+}
+
+.keynote-card .card-header h4 {
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: white;
+}
+
+.keynote-card .card-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.keynote-speaker {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--secondary);
+    margin-bottom: 8px;
+}
+
+.keynote-affiliation {
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .keynote-card .card-header h4 {
+        font-size: 1.2rem;
+    }
+    
+    .keynote-speaker {
+        font-size: 1.2rem;
+    }
+    
+    .keynote-card .card-header,
+    .keynote-card .card-body {
+        padding: 20px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .organizers {
         grid-template-columns: repeat(4, 1fr);
