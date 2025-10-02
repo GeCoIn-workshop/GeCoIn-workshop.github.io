@@ -334,6 +334,13 @@ p {
     color: var(--primary);
 }
 
+/* Add styling for author names in program schedule */
+.timeline-content em {
+    color: #496795;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
 .organizers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
