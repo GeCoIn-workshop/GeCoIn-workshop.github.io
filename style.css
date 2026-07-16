@@ -933,6 +933,15 @@ footer p {
     line-height: 1.4;
 }
 
+.paper-note {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
 @media screen and (max-width: 768px) {
     .papers-grid {
         grid-template-columns: 1fr;
